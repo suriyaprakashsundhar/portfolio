@@ -1,0 +1,124 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #291f68;
+}
+
+.card {
+    max-width: 500px;
+    width: 90%;
+    background-color: #dfe2ff;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-title {
+    font-size: 1.5rem;
+    color: black;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.card-body p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover
+{
+    color: #291f68;
+    transition: all 1ms;
+    font-weight: bold;
+    border-bottom: 2px solid #291f68;
+}
+
+.education .card
+{
+    background-color:#291f68;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-fluid {
+        padding: 10px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-body p {
+        font-size: 0.85rem;
+    }
+
+    nav {
+        /* flex-direction: column; */
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 336px) {
+    .card {
+        width: 95%;
+        padding: 8px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-body p {
+        font-size: 0.8rem;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+}
